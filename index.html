@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <!-- Google Fonts Link For Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <button class="chatbot-toggler">
+            <span class="material-icons">mode_comment</span>
+            <span class="material-icons">close</span>
+        </button>
+        <div class="chatbot">
+            <header>
+                <h2>ChatBot</h2>
+                <span class="close-btn material-icons">close</span>
+            </header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-icons">smart_toy</span>
+                    <p>Hi there 👋🏿<br> How can i help you today?</p>
+                </li>
+                <!-- <li class="chat outgoing">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </li> -->
+            </ul>
+            <div class="chat-input">
+                <textarea placeholder="Enter a message..." required></textarea>
+                <span id="send-btn"  class="material-icons">send</span>
+            </div>
+        </div>
+        <script src="script.js" defer></script>
+    </body>
+</html> 
