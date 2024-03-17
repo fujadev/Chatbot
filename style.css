@@ -132,7 +132,7 @@ body {
     border-top: 1px solid #ccc;
 }
 .chat-input textarea {
-    /* height: 55px; */
+    height: 40px;
     width:  100%;
     border: none;
     outline: none;
