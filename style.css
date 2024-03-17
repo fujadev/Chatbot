@@ -132,7 +132,7 @@ body {
     border-top: 1px solid #ccc;
 }
 .chat-input textarea {
-    height: 55px;
+    /* height: 55px; */
     width:  100%;
     border: none;
     outline: none;
@@ -154,7 +154,7 @@ body {
     visibility: visible;
 }
 
-@media(max-width: 490px) {
+@media(max-width: 576px) {
     .chatbot {
         right: 0;
         bottom: 0;

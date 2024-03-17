@@ -37,7 +37,8 @@ const generateResponse = (incomingChatLi) => {
   fetch(API_URL, requestOptions)
     .then((res) => res.json())
     .then((data) => {
-      messageElement.textContent = data.choices[0].message.content;
+      //   messageElement.textContent = data.choices[0].message.content;
+      console.log(data);
     })
     .catch((error) => {
       messageElement.classList.add("error");
