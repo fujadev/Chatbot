@@ -5,7 +5,7 @@ const chatbotToggler = document.querySelector(".chatbot-toggler");
 const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
-const API_KEY = "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";
+const API_KEY = "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";
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
@@ -21,6 +21,7 @@ const createChatLi = (message, className) => {
 };
 
 const generateResponse = (incomingChatLi) => {
+  if (!userMessage) return;
   const API_URL = "https://api.openai.com/v1/chat/completions";
   const messageElement = incomingChatLi.querySelector("p");
   const requestOptions = {
@@ -64,14 +65,14 @@ const handleChat = () => {
   }, 600);
 };
 
-chatInput.addEventListener("input", () => {
-  if (e.key === "Enter" && !e.shiftkey && window.innerWidth > 800) {
+chatInput.addEventListener("input", (e) => {
+  if (e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
     e.preventDefault();
     handleChat();
   }
 });
 
-chatInput.addEventListener("keydown", () => {
+chatInput.addEventListener("keydown", (e) => {
   chatInput.style.height = `${inputInitHeight}px`;
   chatInput.style.height = `${chatInput.scrollHeight}px`;
 });
